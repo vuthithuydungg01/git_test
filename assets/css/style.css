@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 168px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #603913;
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+#main {
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+#all-header {
+  position: relative;
+  display: block;
+}
+
+#header1 {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #464646;
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 600;
+  z-index: 1;
+  padding: 0 70px;
+}
+
+#support {
+  display: flex;
+}
+#support > p {
+  padding: 0 20px;
+}
+#support a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#language .ti-angle-down {
+  padding-left: 10px;
+}
+#support i[class*="ti-"] {
+  width: 24px;
+  display: inline-block;
+}
+
+#header2 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+#logo img {
+  max-width: 250px;
+}
+#nav {
+  display: flex;
+}
+#nav > li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 24px;
+  cursor: pointer;
+}
+#nav li:hover a {
+  color: #dd9b24;
+}
+#nav li a {
+  color: #f2d9ac;
+  text-decoration: none;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  background-color: white;
+  /* box-shadow: 1px 2px 7px #918d8d; */
+  border: 3px solid #f2d9ac;
+  padding: 10px 25px;
+  z-index: 1;
+}
+#nav .subnav li:last-child {
+  border-bottom: none;
+}
+#nav .subnav li {
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  padding: 8px 0px;
+  border-bottom: 1px solid #f2d9ac;
+}
+#nav .subnav li a {
+  color: #f2d9ac;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav li:hover a {
+  color: #dd9b24;
+  /* animation: modalFadeIn ease 0.5s; */
+}
+
+#slider {
+  /* height: 900px; */
+  padding-top: 40%;
+  background: url("../img/slide.jpg") top center no-repeat;
+  background-size: cover;
+  top: 100px;
+  position: relative;
+}
+#slider .slider-text {
+  position: absolute;
+  color: #fff;
+
+  margin-top: -155px;
+  bottom: 100px;
+  left: 300px;
+}
+
+.slider-text h3 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.slider-button {
+  margin-top: 8px;
+}
+
+#content {
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+#about {
+  background-image: url(https://24370.themes.vinawebsite.vn/wp-content/uploads/2019/11/bg_aboutus.png);
+}
+.content-section {
+  margin: 0 168px;
+  padding: 45px 0;
+  text-align: center;
+}
+.about-title p {
+  padding: 10px;
+}
+.about-title h3 {
+  padding: 10px;
+}
+.about-content {
+  padding: 0px 100px;
+}
+.about-button {
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+
+.service {
+  display: flex;
+}
+.service-left {
+  flex-basis: 50%;
+}
+.service-right {
+  flex-basis: 50%;
+}
+.service-left ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.service-left ul li {
+  list-style: none;
+  width: 100%;
+}
+.item-service {
+  /* align-items: flex-end; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.item-service-right {
+  text-align: left;
+  padding-left: 25px;
+}
+.item-service-right p {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#product {
+  background-image: url(https://24370.themes.vinawebsite.vn/wp-content/uploads/2019/11/bg_sanpham.jpg);
+}
+.list-product {
+  text-align: left;
+}
+.text-product {
+  padding: 10px 0px;
+}
+.item-product {
+  display: flex;
+}
+.item-main {
+  padding: 0 30px 30px 0;
+}
+.item-main img {
+  width: 370px;
+  height: 246px;
+}
+.item-text > p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.item-text > h5 {
+  font-size: 16.5px;
+}
+.line {
+  height: 2px;
+  margin: 7.2px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  max-width: 36px;
+}
+
+#material {
+}
+
+#construction {
+  background-image: url(https://24370.themes.vinawebsite.vn/wp-content/uploads/2019/11/bg_aboutus.png);
+}
+#construction .list-content {
+  text-align: center;
+  width: 100%;
+}
+.list-construction {
+  display: flex;
+  width: 100%;
+}
+.construction-img1 {
+  flex: 1;
+  margin: 40px 8px;
+}
+.construction-img1 > img {
+}
+.construction-img2 {
+  flex: 2;
+  margin: 40px 8px;
+}
+.construction-img2 > img {
+}
+
+#contact {
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+  color: #f1f1f1;
+  /* padding: 30px 0; */
+}
+#contact .content-section > h3 {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 20px;
+}
+#contact .content-section .mail {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+}
+#contact .content-section > p:first-child {
+  margin-top: -15px;
+}
+#contact .content-section .mail > input:first-child {
+  width: 1044px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border-radius: 0;
+  background-color: #fff;
+  color: #333;
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+  transition: color 0.3s, border 0.3s, background 0.3s, opacity 0.3s;
+}
+#contact .content-section .mail > input:first-child:focus {
+  box-shadow: 0 0 5px #ccc;
+  opacity: 1 !important;
+  outline: 0;
+}
+#contact .content-section .mail > input:last-child {
+
+}
+
+#footer {
+  
+}
+#footer .list-footer {
+  display: flex;
+  padding: 15px 0;
+
+}
+.footer-item {
+  padding: 0 15px;
+  flex: 1;
+  flex-basis: 33.33333%;
+  text-align: left;
+
+}
+.footer-map > iframe {
+  width: 100%;
+}
+#footer .socials-list {
+  font-size: 21px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer .socials-list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .socials-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
